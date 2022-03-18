@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
+    "@capacitor-community/apple-sign-in": "^1.0.1",
     "@capacitor/core": "3.4.3",
+    "@capacitor/ios": "^3.4.3",
     "@ionic/react": "^6.0.0",
     "@ionic/react-router": "^6.0.0",
     "@testing-library/jest-dom": "^5.11.9",
@@ -38,7 +40,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "set NODE_ENV=dev && node ./src/env/script.js && react-scripts build",
     "test": "react-scripts test --transformIgnorePatterns 'node_modules/(?!(@ionic/react|@ionic/react-router|@ionic/core|@stencil/core|ionicons)/)'",
     "eject": "react-scripts eject"
   },
